@@ -20,7 +20,7 @@ export default function GameBoard({
   return (
     <>
       <div className="mb-3">Ходы: {moves}</div>
-      <div className="d-flex gap-3">
+      <div className="cards-grid">
         {cards.map((emoji, index) => (
           <CardEmoji
             key={index}
