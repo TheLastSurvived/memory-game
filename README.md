@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# Memory Game (React + TypeScript)
 
 Игра на запоминание карточек с эмодзи. Найди все пары за минимальное количество ходов!
 
