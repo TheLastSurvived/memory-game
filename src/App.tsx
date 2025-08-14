@@ -46,6 +46,10 @@ function App() {
     setAlertStatus(false);
   };
 
+  const endGame = () => {
+    setStatus("idle");
+  }
+
   const handleCardClick = (index: number) => {
     if (
       flipped.includes(index) ||
@@ -127,6 +131,11 @@ function App() {
           <RecordsList records={recordsList} />
         </div>
       )}
+
+      {status !== "idle" && (
+        <button className="btn btn-danger my-3" onClick={endGame}>Завершить</button>
+      )}
+
       {alertStatus === true && (
         <Alert text="Введите ваше имя для начала игры!" />
       )}
